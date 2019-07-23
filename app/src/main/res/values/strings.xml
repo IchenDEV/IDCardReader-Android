@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JHWalkIDReader</string>
+    <string name="pleasePutIDCard">请放置身份证</string>
+    <string name="todo">TODO</string>
+    <string name="useTime">耗时:</string>
+    <string name="withoutIDCard">未放置身份证</string>
+</resources>

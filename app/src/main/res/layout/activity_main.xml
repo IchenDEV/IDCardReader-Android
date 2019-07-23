@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.cunoraz.gifview.library.GifView
+            android:id="@+id/gifView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pleasePutIDCard"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/readerstatText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/withoutIDCard"
+            android:textAlignment="center"
+            android:textColor="#dfdfdf"
+            android:textSize="16sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="580dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/ivHead"
+                    android:layout_width="177dp"
+                    android:layout_height="178dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:contentDescription="TODO"
+                    android:maxWidth="140dp"
+                    android:src="@mipmap/head" />
+
+
+
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvname"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvsex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvname"
+                    android:layout_marginTop="5dp"
+                    android:text="性别:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvsex2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvname"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvname"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvnation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvsex"
+                    android:layout_marginTop="5dp"
+                    android:text="民族:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvnation2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvsex"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvnation"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvbirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnation"
+                    android:layout_marginTop="5dp"
+                    android:text="出生日期:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvbirthday2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvnation"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvbirthday"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+
+                <TextView
+                    android:id="@+id/tvaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvbirthday"
+                    android:layout_marginTop="5dp"
+                    android:text="居住地址:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvaddress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvbirthday"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvaddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    tools:text="杭州市" />
+
+                <TextView
+                    android:id="@+id/tvcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号:"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tvaddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvcode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvcode"
+                    android:layout_below="@+id/tvaddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    tools:text="330106000000000000" />
+
+                <TextView
+                    android:id="@+id/tvdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvcode"
+                    android:layout_marginTop="5dp"
+                    android:text="有效日期:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvdate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvcode"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvdate"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvdepart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdate"
+                    android:layout_marginTop="5dp"
+                    android:text="签发机关:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0082D4" />
+
+                <TextView
+                    android:id="@+id/tvdepart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdate"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/tvdepart"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvshijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:text="@string/useTime"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0082D4" />
+
+        <TextView
+            android:id="@+id/tvshijiancontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
